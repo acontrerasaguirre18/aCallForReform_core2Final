@@ -1,0 +1,270 @@
+/* type faces */
+@font-face {
+    font-family: spike;
+    src:url('VTCSpikeTrial-Bold.otf')
+}
+@font-face {
+    font-family: neue;
+    src:url('TheNeueBlackVF.ttf')
+}
+@font-face {
+    font-family: heavy;
+    src:url('ABCDiatype-Heavy-Trial.otf')
+}
+@font-face {
+    font-family: regular;
+    src:url('ABCDiatype-Regular-Trial.otf')
+}
+@font-face {
+    font-family: lite;
+    src:url('ABCDiatype-Light-Trial.otf')
+}
+@font-face {
+    font-family: carrie;
+    src:url('VTCCarrie-Regular.otf')
+}
+@font-face {
+    font-family: expo;
+    src:url('ExposureTrial[-40].otf')
+}
+
+/* general styling */
+body{ 
+    background-color:#baa0e3;
+    margin: 1%;
+    padding: 0%;
+}
+section{
+    margin: 0%;
+}
+div{
+    margin: 1%;
+    padding: 0%;
+}
+
+video{
+    margin-top: 50px;
+    position:relative;
+    border-radius: 0%;
+}
+/* fixed header styling and positioning */
+.fixed-header {
+    font-family: 'expo';
+    font-size: 1.5vw;
+    color:black;
+    top: -1%;
+    left: -1%;
+    width: 110%;
+    height: 50px;
+    z-index: 999;
+    background-color:#baa0e3;
+    border: solid;
+    border-width: 2px;
+}
+header {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    height: 80px; 
+    transition: height 0.3s ease-in-out; 
+}
+header.fixed {
+    position: fixed;
+    width: 100%;
+    height: 2000px; 
+}
+#headerTitle{
+    margin-left: 1.25%;
+}
+
+#headerContainer{
+    margin-top: 40px;
+    font-family: "expo";
+    font-size: 8vw;
+    letter-spacing: .35vw;
+}
+
+/* styling for titles, PH, key */
+.titleStyle {
+    color: rgb(0, 0, 0);
+    font-family: 'expo';
+    font-size: 4.5vw;
+    line-height: 5vw;  
+    letter-spacing: .1vw;
+}
+
+.phStyle{
+    color: rgb(0, 0, 0);
+    font-family: 'regular';
+    font-size: 1.25vw;
+    line-height: 1.5vw;
+    letter-spacing: auto;
+}
+/* GRID SYSTEM 1 formating and element postions */
+#gridSystem1{
+    position: relative;
+    margin-top: 50px;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap:10px;  
+}
+#container1{
+    border: solid black;
+    border-width: .225vw;
+    border-radius: 50px;
+    padding: 2%;
+    background-color:#5b8ba0;
+}
+#container2{
+    border: solid black;
+    border-width: .225vw;
+    border-radius: 50px;
+    padding: 2%;
+    background-color:#a0773b;
+}
+#container3{
+    border: solid black;
+    border-width: .225vw;
+    border-radius: 50px;
+    padding: 2%;
+    background-color:#526040;
+}
+#container4{
+    border: solid black;
+    border-width: .225vw;
+    border-radius: 50px;
+    padding: 2%;
+    background-color:#a03b96;
+}
+/* Systemic Oppression postion */
+#title1Pos{
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+
+}
+
+#ph1Pos{
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#star1{
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#star2{
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#star3{
+    display: grid;
+    grid-column: 2;
+    grid-row: 3;
+}
+#star4{
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+/* Racial Profiling postion */
+#title2Pos{
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    }
+
+#ph2Pos{
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    }
+    
+
+/* DisProportionate postion */
+#title3Pos{
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+    }
+
+#ph3Pos{
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+
+#keyTitle{
+    color: rgb(0, 0, 0);
+    font-family: 'expo';
+    font-size: 5vw;
+}  
+
+
+#border{
+    border: solid #000000;
+    border-radius: 10px;
+    border-width: 3px;
+    width: 36vw;
+    padding: .5%;
+    margin: 0%;
+    font-size: 1vw;
+    display: flex;
+    float: center;
+} 
+
+#bold{
+    font-family: "heavy";
+}
+  .grid-container {
+    display: grid;
+    font-family: "regular";
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 10px;
+    font-size: 1.5vw;
+  }
+  
+  ul.category-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li.category-item {
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  li.category-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .div-container {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div.category-div {
+    background-color: #eeef87;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    font-size: 1vw;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  }
+  
